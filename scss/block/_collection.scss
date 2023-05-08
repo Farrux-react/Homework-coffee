@@ -16,6 +16,12 @@
 .collection__item {
     max-width: 255px;
     text-align: center;
+    transition: .5s ease;
+}
+
+.collection__item:hover {
+    transform: scale(1.1);
+    border: 1px solid #0E8784;
 }
 
 .collection__img-block {
