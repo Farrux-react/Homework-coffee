@@ -1,0 +1,105 @@
+.footer {
+    background: #2C343E;
+    margin-bottom: 88px;
+
+    .footer-content {
+        padding: 47px 85px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-logo {
+            width: 236px;
+            margin-right: 102px;
+        }
+
+        .footer-navbar {
+            ul {
+                display: flex;
+
+                a {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 15px;
+                    letter-spacing: 0.923077px;
+                    text-transform: uppercase;
+                    color: #83888F;
+                    padding-left: 32px;
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+
+            img {
+                padding-left: 24px;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 1001px) {
+
+    .footer {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+        height: 270px;
+
+        .footer-content {
+            flex-direction: column;
+
+
+            .footer-logo {
+                margin: 0 auto;
+                margin-bottom: 32px;
+            }
+
+            .social-media {
+                margin-top: 65px;
+
+                img {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .footer {
+        max-width: 100%;
+        height: 400px;
+
+        .footer-content {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+
+            .footer-logo {
+                max-width: 217px;
+                padding-top: 50px;
+            }
+
+            .footer-navbar {
+
+                ul {
+                    flex-direction: column;
+                    text-align: center;
+
+                    li {
+                        padding-bottom: 24px;
+
+                        a {
+                            font-size: 12px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
