@@ -38,6 +38,7 @@
         .work-card {
             max-width: 285px;
             margin-right: 90px;
+            transition: .5s;
 
             .work-card-h1 {
                 font-family: $font2;
@@ -64,6 +65,11 @@
                 line-height: 26px;
                 color: #333D4B;
                 margin-bottom: 64px;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                border: 1px solid #0E8784;
             }
         }
     }

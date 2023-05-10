@@ -505,6 +505,7 @@ body {
 .work .work-cards .work-card {
   max-width: 285px;
   margin-right: 90px;
+  transition: 0.5s;
 }
 .work .work-cards .work-card .work-card-h1 {
   font-family: "Fraunces", serif;
@@ -529,6 +530,10 @@ body {
   line-height: 26px;
   color: #333D4B;
   margin-bottom: 64px;
+}
+.work .work-cards .work-card:hover {
+  transform: scale(1.1);
+  border: 1px solid #0E8784;
 }
 .work .btn {
   font-family: "Fraunces", serif;
@@ -664,5 +669,321 @@ body {
   .footer .footer-content .footer-navbar ul li a {
     font-size: 12px;
     line-height: 25px;
+  }
+}
+.about-header {
+  padding: 44px 20px 45px 20px;
+}
+.about-header .about-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-header .about-nav .about-header-logo {
+  width: 235px;
+}
+.about-header .about-nav .about-hamburger {
+  display: none;
+}
+.about-header .about-nav .about-navbar {
+  display: flex;
+}
+.about-header .about-nav .about-navbar a {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  margin-left: 32px;
+  text-transform: uppercase;
+  color: #83888F;
+  transition: 0.5s ease;
+}
+.about-header .about-nav .about-navbar a:hover {
+  color: #333D4B;
+}
+
+@media screen and (max-width: 768px) {
+  .about-header {
+    padding: 40px 39px 53px 39px;
+  }
+}
+@media screen and (max-width: 601px) {
+  .about-header {
+    padding: 32px 24px 40px 24px;
+  }
+  .about-header .about-nav .about-header-logo {
+    width: 190px;
+  }
+  .about-header .about-nav .about-hamburger {
+    cursor: pointer;
+    width: 16px;
+    display: block;
+  }
+  .about-header .about-nav .about-navbar {
+    display: none;
+  }
+  .about-header .about-nav .about-navbar a {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about-header {
+    padding: 32px 24px;
+  }
+  .about-header .about-nav .about-header-logo {
+    width: 163px;
+  }
+  .about-header .about-nav .hamburger {
+    cursor: pointer;
+    width: 16px;
+    display: block;
+  }
+  .about-header .about-nav .about-navbar {
+    display: none;
+  }
+}
+.about-hero {
+  margin-bottom: 168px;
+}
+.about-hero .about-hero-content {
+  width: 100%;
+  height: 450px;
+  background: url(../../../images/about-hero-bg.png);
+  border-radius: 10px;
+  padding: 137px 0 0 85px;
+}
+.about-hero .about-hero-content .about-hero-h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 24px;
+}
+.about-hero .about-hero-content .about-hero-p {
+  max-width: 445px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 840px) {
+  .about-hero .about-hero-content {
+    background-position-x: center;
+    padding: 118px 0 0 58px;
+  }
+  .about-hero .about-hero-content .about-hero-h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .about-hero .about-hero-content .about-hero-p {
+    max-width: 398px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .about-hero .about-hero-content {
+    text-align: center;
+    padding: 111px 0 0 0;
+  }
+  .about-hero .about-hero-content .about-hero-h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .about-hero .about-hero-content .about-hero-p {
+    margin: 0 auto;
+    max-width: 279px;
+  }
+}
+.about-commit {
+  margin-bottom: 200px;
+}
+.about-commit .about-commit-content {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-commit .about-commit-content .about-left {
+  max-width: 485px;
+  height: 606px;
+  margin-right: 125px;
+  overflow: hidden;
+}
+.about-commit .about-commit-content .about-left img {
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.about-commit .about-commit-content .about-left img:hover {
+  transform: scale(1.1);
+}
+.about-commit .about-commit-content .about-right h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #333D4B;
+  margin-bottom: 32px;
+}
+.about-commit .about-commit-content .about-right p {
+  max-width: 540px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 861px) {
+  .about-commit .about-commit-content .about-left {
+    margin-right: 69px;
+  }
+  .about-commit .about-commit-content .about-right h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .about-commit .about-commit-content .about-right p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 665px) {
+  .about-commit .about-commit-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-commit .about-commit-content .about-left {
+    margin-bottom: 48px;
+    margin-right: 0;
+  }
+  .about-commit .about-commit-content .about-right p {
+    max-width: 327px;
+  }
+}
+.about-quality {
+  background: #2C343E;
+  border-radius: 10px;
+  margin-bottom: 168px;
+}
+.about-quality .about-quality-content {
+  display: flex;
+}
+.about-quality .about-quality-content .about-quality-top {
+  display: none;
+}
+.about-quality .about-quality-content .about-quality-left {
+  padding: 100px 125px 0 85px;
+}
+.about-quality .about-quality-content .about-quality-left h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+.about-quality .about-quality-content .about-quality-left p {
+  max-width: 540px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+.about-quality .about-quality-content .about-quality-right {
+  max-width: 445px;
+  height: 474px;
+}
+.about-quality .about-quality-content .about-quality-right img {
+  margin-top: -88px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.about-quality .about-quality-content .about-quality-right img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 1250px) {
+  .about-quality .about-quality-content .about-quality-left {
+    padding: 100px 100px 0 35px;
+  }
+  .about-quality .about-quality-content .about-quality-left h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .about-quality .about-quality-content .about-quality-left p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1112px) {
+  .about-quality .about-quality-content .about-quality-left {
+    padding: 100px 20px 0 15px;
+  }
+  .about-quality .about-quality-content .about-quality-left h1 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .about-quality .about-quality-content .about-quality-left p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .about-quality {
+    margin-top: 300px;
+  }
+  .about-quality .about-quality-content {
+    flex-direction: column;
+  }
+  .about-quality .about-quality-content .about-quality-top {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .about-quality .about-quality-content .about-quality-top img {
+    margin-top: -100px;
+    width: 100%;
+    height: 320px;
+    border-radius: 8px;
+    transition: 0.5s;
+  }
+  .about-quality .about-quality-content .about-quality-top img:hover {
+    transform: scale(1.1);
+  }
+  .about-quality .about-quality-content .about-quality-left {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+  .about-quality .about-quality-content .about-quality-left h1 {
+    margin-top: 62px;
+  }
+  .about-quality .about-quality-content .about-quality-left p {
+    margin-bottom: 67px;
+  }
+  .about-quality .about-quality-content .about-quality-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-quality .about-quality-content .about-quality-left h1 {
+    max-width: 279px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .about-quality .about-quality-content .about-quality-left p {
+    max-width: 279px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

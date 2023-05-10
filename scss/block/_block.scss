@@ -1,6 +1,14 @@
-@import "header";
-@import "first-section";
-@import "collection";
-@import "choose";
-@import "work";
-@import "footer";
+// HOME
+@import "page-1/header";
+@import "page-1/first-section";
+@import "page-1/collection";
+@import "page-1/choose";
+@import "page-1/work";
+@import "page-1/footer";
+
+// ABOUT
+@import "page-2/about-header";
+@import "page-2/about-hero";
+@import "page-2/commit";
+@import "page-2/quality";
+@import "page-2/headquart";
